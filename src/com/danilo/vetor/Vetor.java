@@ -1,5 +1,7 @@
 package com.danilo.vetor;
 
+import java.util.Arrays;
+
 /**
  * Vetor
  */
@@ -13,15 +15,6 @@ public class Vetor {
         this.tamanho = 0;
     }
 
-    // public void adiciona(String elemento) {
-    //     for(int i = 0; i < this.elementos.length; i++) {
-    //         if(this.elementos[i] == null) {
-    //             this.elementos[i] = elemento;
-    //             break;
-    //         }
-    //     }
-    // }
-
     public void adiciona(String elemento) throws Exception {
         if(this.tamanho < this.elementos.length) {
             this.elementos[this.tamanho] = elemento;
@@ -29,5 +22,28 @@ public class Vetor {
         } else {
             throw new Exception("Vetor já está cheio, não é possível adicionar mais elementos.");
         }
+    }
+
+    public int tamanho() {
+        return this.tamanho;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+
+        for(int i = 0; i < this.tamanho - 1; i++) {
+            sb.append(this.elementos[i]);
+            sb.append(", ");
+        }
+
+        if(this.tamanho > 0) {
+            sb.append(this.elementos[this.tamanho - 1]);
+        }
+
+        sb.append("]");
+
+        return sb.toString();
     }
 }
