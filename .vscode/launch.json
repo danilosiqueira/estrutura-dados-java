@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Aula03",
+            "request": "launch",
+            "mainClass": "com.danilo.vetor.teste.Aula03",
+            "projectName": "estrutura-dados-java"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Aula02",
+            "request": "launch",
+            "mainClass": "com.danilo.vetor.teste.Aula02",
+            "projectName": "estrutura-dados-java"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "app.App",
+            "projectName": "estrutura-dados-java"
+        }
+    ]
+}
