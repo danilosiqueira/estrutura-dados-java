@@ -18,7 +18,8 @@ public class VetorTeste {
 
             System.out.println(vetor.tamanho());
             System.out.println(vetor);
-            System.out.println(vetor.busca(3));
+            System.out.println(vetor.busca(2));
+            System.out.println(vetor.busca("elemento 1"));
         } catch (Exception e) {
             e.printStackTrace();
         }
