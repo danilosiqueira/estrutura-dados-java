@@ -40,6 +40,20 @@ public class VetorTeste {
             vetor03.adiciona("F");
             vetor03.adiciona("G");
             System.out.println(vetor03);
+
+            Vetor vetor04 = new Vetor(3);
+            vetor04.adiciona("B");
+            vetor04.adiciona("C");
+            vetor04.adiciona("E");
+            vetor04.adiciona("F");
+            vetor04.adiciona("G");
+            System.out.println(vetor04);
+
+            vetor04.remove(1);
+            System.out.println(vetor04);
+            
+            vetor04.remove("G");
+            System.out.println(vetor04);
         } catch (Exception e) {
             e.printStackTrace();
         }
