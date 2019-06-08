@@ -32,6 +32,14 @@ public class VetorTeste {
 
             vetor02.adiciona("D", 3);
             System.out.println(vetor02);
+
+            Vetor vetor03 = new Vetor(3);
+            vetor03.adiciona("B");
+            vetor03.adiciona("C");
+            vetor03.adiciona("E");
+            vetor03.adiciona("F");
+            vetor03.adiciona("G");
+            System.out.println(vetor03);
         } catch (Exception e) {
             e.printStackTrace();
         }
