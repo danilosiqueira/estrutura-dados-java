@@ -54,6 +54,25 @@ public class VetorTeste {
             
             vetor04.remove("G");
             System.out.println(vetor04);
+
+            Contato c1 = new Contato("Danilo", "1111-1111", "danilo@danilo");
+            Contato c2 = new Contato("Danilo", "1111-1111", "danilo@danilo");
+            Contato c3 = new Contato("Danilo", "1111-1111", "danilo@danilo");
+            Contato c4 = new Contato("Danilo", "1111-1111", "danilo@danilo");
+
+            Vetor vetor05 = new Vetor(5);
+            vetor05.adiciona(c1);
+            vetor05.adiciona(c2);
+            vetor05.adiciona(c3);
+            System.out.println(vetor05);
+
+            int posContato = vetor05.busca(c4);
+            if(posContato < 0) {
+                System.out.println("Contato não existe no vetor.");
+            } else {
+                System.out.println("Contato existe no vetor.");
+            }
+
         } catch (Exception e) {
             e.printStackTrace();
         }
