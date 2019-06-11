@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ListaTeste",
+            "request": "launch",
+            "mainClass": "com.danilo.vetor.teste.ListaTeste",
+            "projectName": "estrutura-dados-java"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - VetorTeste",
             "request": "launch",
             "mainClass": "com.danilo.vetor.teste.VetorTeste",

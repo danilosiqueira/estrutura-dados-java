@@ -11,6 +11,7 @@ public class ListaTeste {
         try {
             Lista<String> lista = new Lista<String>(1);
             lista.adiciona("elemento");
+            System.out.println(lista);
         } catch (Exception e) {
             e.printStackTrace();
         }
